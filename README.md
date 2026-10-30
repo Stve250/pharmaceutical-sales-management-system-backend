@@ -6,7 +6,6 @@ Academic information
 - Course: INSY 8322 — Web Technology and Internet
 - Institution: Adventist University of Central Africa (AUCA)
 - Project: Mid-Term Examination, Academic Year 2026–2027
-Technology stack
 - Java 27 (as configured in pom.xml)
 - Spring Boot 4.1.1 (as configured in pom.xml)
 - Spring Web MVC
