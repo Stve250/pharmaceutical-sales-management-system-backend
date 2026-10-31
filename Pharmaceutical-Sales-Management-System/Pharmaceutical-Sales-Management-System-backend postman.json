@@ -1,0 +1,1092 @@
+{
+  "info": {
+    "name": "Pharmaceutical Sales Management System | Midterm Lecturer Demo",
+    "description": "AUCA INSY 8322 | Student ID 27165 | Import, start the backend, create records, and replace UUID collection variables. Requests correspond to Parts A–F and bonus. Server is local; lecturer must run the API to execute requests. Do not run DELETE/cancel requests until ready.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Product Lines",
+      "item": [
+        {
+          "name": "A2 | POST /api/product-lines/save",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/product-lines/save",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "product-lines",
+                "save"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Antibiotics\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | GET /api/product-lines/all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/product-lines/all",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "product-lines",
+                "all"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | GET /api/product-lines/{{productLineId}}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/product-lines/{{productLineId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "product-lines",
+                "{{productLineId}}"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | PUT /api/product-lines/update/{{productLineId}}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/product-lines/update/{{productLineId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "product-lines",
+                "update",
+                "{{productLineId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Antibiotics\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | DELETE /api/product-lines/delete/{{productLineId}}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/product-lines/delete/{{productLineId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "product-lines",
+                "delete",
+                "{{productLineId}}"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "C3 | GET /api/product-lines/unused",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/product-lines/unused",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "product-lines",
+                "unused"
+              ]
+            },
+            "description": "Requirement C3. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Territories",
+      "item": [
+        {
+          "name": "A2 | POST /api/territories/save",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/territories/save",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "territories",
+                "save"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"territoryNumber\": 1,\n  \"name\": \"Kigali\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | GET /api/territories/all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/territories/all",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "territories",
+                "all"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | GET /api/territories/{{territoryId}}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/territories/{{territoryId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "territories",
+                "{{territoryId}}"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | PUT /api/territories/update/{{territoryId}}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/territories/update/{{territoryId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "territories",
+                "update",
+                "{{territoryId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"territoryNumber\": 1,\n  \"name\": \"Kigali\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | DELETE /api/territories/delete/{{territoryId}}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/territories/delete/{{territoryId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "territories",
+                "delete",
+                "{{territoryId}}"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "C2 | GET /api/territories/free",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/territories/free",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "territories",
+                "free"
+              ]
+            },
+            "description": "Requirement C2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pharmacies",
+      "item": [
+        {
+          "name": "A2 | POST /api/pharmacies/save",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/pharmacies/save",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "pharmacies",
+                "save"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"pharmacyName\": \"City Pharmacy\",\n  \"ownerName\": \"Alex\",\n  \"licenceNumber\": \"RFDA-PH-0342\",\n  \"district\": \"Gasabo\",\n  \"phone\": \"0780000000\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | GET /api/pharmacies/all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/pharmacies/all",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "pharmacies",
+                "all"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | GET /api/pharmacies/{{pharmacyId}}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/pharmacies/{{pharmacyId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "pharmacies",
+                "{{pharmacyId}}"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | PUT /api/pharmacies/update/{{pharmacyId}}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/pharmacies/update/{{pharmacyId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "pharmacies",
+                "update",
+                "{{pharmacyId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"pharmacyName\": \"City Pharmacy\",\n  \"ownerName\": \"Alex\",\n  \"licenceNumber\": \"RFDA-PH-0342\",\n  \"district\": \"Gasabo\",\n  \"phone\": \"0780000000\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | DELETE /api/pharmacies/delete/{{pharmacyId}}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/pharmacies/delete/{{pharmacyId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "pharmacies",
+                "delete",
+                "{{pharmacyId}}"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "B1 | GET /api/pharmacies/by-district?district=gasabo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/pharmacies/by-district?district=gasabo",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "pharmacies",
+                "by-district"
+              ]
+            },
+            "description": "Requirement B1. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "C4 | GET /api/pharmacies/of-sales-representative/{{salesRepresentativeId}}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/pharmacies/of-sales-representative/{{salesRepresentativeId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "pharmacies",
+                "of-sales-representative",
+                "{{salesRepresentativeId}}"
+              ]
+            },
+            "description": "Requirement C4. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sales Representatives",
+      "item": [
+        {
+          "name": "A2 | POST /api/sales-representatives/save",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-representatives/save",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-representatives",
+                "save"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"Jean\",\n  \"lastName\": \"K\",\n  \"phone\": \"0780000001\",\n  \"territory\": {\n    \"id\": \"{{territoryId}}\"\n  },\n  \"productLines\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | GET /api/sales-representatives/all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-representatives/all",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-representatives",
+                "all"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | GET /api/sales-representatives/{{salesRepresentativeId}}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-representatives/{{salesRepresentativeId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-representatives",
+                "{{salesRepresentativeId}}"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | PUT /api/sales-representatives/update/{{salesRepresentativeId}}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-representatives/update/{{salesRepresentativeId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-representatives",
+                "update",
+                "{{salesRepresentativeId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"Jean\",\n  \"lastName\": \"K\",\n  \"phone\": \"0780000001\",\n  \"territory\": {\n    \"id\": \"{{territoryId}}\"\n  },\n  \"productLines\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | DELETE /api/sales-representatives/delete/{{salesRepresentativeId}}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-representatives/delete/{{salesRepresentativeId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-representatives",
+                "delete",
+                "{{salesRepresentativeId}}"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "C1 | GET /api/sales-representatives/by-product-line?name=antibiotics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-representatives/by-product-line?name=antibiotics",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-representatives",
+                "by-product-line"
+              ]
+            },
+            "description": "Requirement C1. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "D3 | PUT /api/sales-representatives/{{salesRepresentativeId}}/product-lines/{{productLineId}}",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-representatives/{{salesRepresentativeId}}/product-lines/{{productLineId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-representatives",
+                "{{salesRepresentativeId}}",
+                "product-lines",
+                "{{productLineId}}"
+              ]
+            },
+            "description": "Requirement D3. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "D4 | PATCH /api/sales-representatives/{{salesRepresentativeId}}/territory?territoryNumber=4",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-representatives/{{salesRepresentativeId}}/territory?territoryNumber=4",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-representatives",
+                "{{salesRepresentativeId}}",
+                "territory"
+              ]
+            },
+            "description": "Requirement D4. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sales Orders",
+      "item": [
+        {
+          "name": "D1 | POST /api/sales-orders/save",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-orders/save",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-orders",
+                "save"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orderDate\": \"2026-11-10\",\n  \"totalAmount\": 25000,\n  \"pharmacy\": {\n    \"id\": \"{{pharmacyId}}\"\n  },\n  \"salesRepresentative\": {\n    \"id\": \"{{salesRepresentativeId}}\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "description": "Requirement D1. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | GET /api/sales-orders/all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-orders/all",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-orders",
+                "all"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | GET /api/sales-orders/{{salesOrderId}}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-orders/{{salesOrderId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-orders",
+                "{{salesOrderId}}"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | PUT /api/sales-orders/update/{{salesOrderId}}",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-orders/update/{{salesOrderId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-orders",
+                "update",
+                "{{salesOrderId}}"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orderDate\": \"2026-11-10\",\n  \"totalAmount\": 25000,\n  \"pharmacy\": {\n    \"id\": \"{{pharmacyId}}\"\n  },\n  \"salesRepresentative\": {\n    \"id\": \"{{salesRepresentativeId}}\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | DELETE /api/sales-orders/delete/{{salesOrderId}}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-orders/delete/{{salesOrderId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-orders",
+                "delete",
+                "{{salesOrderId}}"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "B2 | GET /api/sales-orders/by-status?status=PLACED",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-orders/by-status?status=PLACED",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-orders",
+                "by-status"
+              ]
+            },
+            "description": "Requirement B2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "B3 | GET /api/sales-orders/between?start=2026-10-01&end=2026-11-30",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-orders/between?start=2026-10-01&end=2026-11-30",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-orders",
+                "between"
+              ]
+            },
+            "description": "Requirement B3. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "D2 | PATCH /api/sales-orders/{{salesOrderId}}/status?status=APPROVED",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-orders/{{salesOrderId}}/status?status=APPROVED",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-orders",
+                "{{salesOrderId}}",
+                "status"
+              ]
+            },
+            "description": "Requirement D2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "F1 | GET /api/sales-orders/stats/by-status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-orders/stats/by-status",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-orders",
+                "stats",
+                "by-status"
+              ]
+            },
+            "description": "Requirement F1. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "F2 | PATCH /api/sales-orders/cancel-day?salesRepresentativeId={{salesRepresentativeId}}&date=2026-11-10",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-orders/cancel-day?salesRepresentativeId={{salesRepresentativeId}}&date=2026-11-10",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-orders",
+                "cancel-day"
+              ]
+            },
+            "description": "Requirement F2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "Bonus | GET /api/sales-orders/page?page=0&size=5&sort=orderDate,desc",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/sales-orders/page?page=0&size=5&sort=orderDate,desc",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "sales-orders",
+                "page"
+              ]
+            },
+            "description": "Requirement Bonus. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Delivery Notes",
+      "item": [
+        {
+          "name": "E1 | POST /api/delivery-notes/save?salesOrderId={{salesOrderId}}",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/delivery-notes/save?salesOrderId={{salesOrderId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "delivery-notes",
+                "save"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"productName\": \"Amoxicillin 500mg\",\n  \"remarks\": \"Delivered\",\n  \"quantity\": 200\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "description": "Requirement E1. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "A2 | GET /api/delivery-notes/all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/delivery-notes/all",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "delivery-notes",
+                "all"
+              ]
+            },
+            "description": "Requirement A2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "E2 | GET /api/delivery-notes/pharmacy/RFDA-PH-0342",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/delivery-notes/pharmacy/RFDA-PH-0342",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "delivery-notes",
+                "pharmacy",
+                "RFDA-PH-0342"
+              ]
+            },
+            "description": "Requirement E2. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        },
+        {
+          "name": "E3 | DELETE /api/delivery-notes/delete/{{deliveryNoteId}}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/delivery-notes/delete/{{deliveryNoteId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "delivery-notes",
+                "delete",
+                "{{deliveryNoteId}}"
+              ]
+            },
+            "description": "Requirement E3. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dashboard",
+      "item": [
+        {
+          "name": "Bonus | GET /api/dashboard/summary",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/dashboard/summary",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "dashboard",
+                "summary"
+              ]
+            },
+            "description": "Requirement Bonus. Replace {{...Id}} variables with actual UUIDs from your database. Run dependent POST requests first."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Exam Error Demonstrations",
+      "item": [
+        {
+          "name": "D2 | Error: invalid transition (400)",
+          "request": {
+            "method": "PATCH",
+            "url": "{{baseUrl}}/api/sales-orders/{{salesOrderId}}/status?status=PLACED",
+            "description": "Use an order currently DELIVERED or CANCELLED; this must return HTTP 400."
+          }
+        },
+        {
+          "name": "E1 | Error: delivery note for non-delivered order (400)",
+          "request": {
+            "method": "PATCH",
+            "url": "{{baseUrl}}/api/sales-orders/{{salesOrderId}}/status?status=PLACED",
+            "description": "Use an order currently DELIVERED or CANCELLED; this must return HTTP 400."
+          }
+        },
+        {
+          "name": "A2 | Error: unknown sales order (404)",
+          "request": {
+            "method": "PATCH",
+            "url": "{{baseUrl}}/api/sales-orders/{{salesOrderId}}/status?status=PLACED",
+            "description": "Use an order currently DELIVERED or CANCELLED; this must return HTTP 400."
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    },
+    {
+      "key": "productLineId",
+      "value": "REPLACE_UUID"
+    },
+    {
+      "key": "territoryId",
+      "value": "REPLACE_UUID"
+    },
+    {
+      "key": "pharmacyId",
+      "value": "REPLACE_UUID"
+    },
+    {
+      "key": "salesRepresentativeId",
+      "value": "REPLACE_UUID"
+    },
+    {
+      "key": "salesOrderId",
+      "value": "REPLACE_UUID"
+    },
+    {
+      "key": "deliveryNoteId",
+      "value": "REPLACE_UUID"
+    }
+  ]
+}
