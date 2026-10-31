@@ -121,20 +121,3 @@ Set the base URL to http://localhost:8080, start the backend, and create test da
 4. Sales representatives
 5. Sales orders
 6. Delivery notes (after the relevant orders reach DELIVERED)
-Copy the generated UUIDs from database records and use them for related requests. Test both successful and failing cases, including invalid status transitions, nonexistent IDs, and conflicting assignments.
-Coursework coverage
-Part	Topic	Marks
-A	Entities, relationships, CRUD	15
-B	Derived queries	15
-C	JPQL and joins	20
-D	Business rules	25
-E	Delivery notes	15
-F	Reports and bulk updates	10
-Bonus	Dashboard and pagination	+10
-
-
-Notes
-This repository is an academic backend project. The documented endpoints and features reflect the supplied project source; they are not a claim that every endpoint has been independently integration-tested. Before deploying beyond local development, review database credentials, input validation, access control, and production database migration practices.
-Author
-Steven Ndayizeye — Student ID 27165
-Adventist University of Central Africa (AUCA)
